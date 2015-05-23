@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<extension version="2.5" type="plugin" group="content">
+<extension version="3.0" type="plugin" group="content">
 	<name>Content - Load map</name>
 	<author>Noxidsoft</author>
-	<creationDate>February 2012</creationDate>
-	<copyright>Copyright (C) 2007 - 2012 Noxidsoft. All rights reserved.</copyright>
+	<creationDate>September 2014</creationDate>
+	<copyright>Copyright (C) 2007 - 2014 Noxidsoft. All rights reserved.</copyright>
 	<license>http://www.gnu.org/licenseses/gpl-2.0.html GNU/GPL</license>
 	<authorEmail>admin@noxidsoft.com</authorEmail>
 	<authorUrl>www.noxidsoft.com</authorUrl>
-	<version>1.0.2</version>
+	<version>3.3.0</version>
 	<description>PLG_LOADMAP_XML_DESCRIPTION</description>
 	<files>
 		<filename plugin="loadmap">loadmap.php</filename>
@@ -15,13 +15,13 @@
 		<folder>images</folder>
 		<folder>language</folder>
 	</files>
-	
+
 	<config>
 		<fields name="params">
 
 			<fieldset name="basic">
-				<field 
-					name="mapMode" 
+				<field
+					name="mapMode"
 					type="list"
 					default="0"
 					label="PLG_MAPMODE_LABEL"
@@ -30,22 +30,28 @@
 					<option value="1">PLG_MAPMODE_TWO</option>
 					<option value="2">PLG_MAPMODE_THREE</option>
 				</field>
-				<field 
-					name="mapState" 
-					type="text" 
-					default="" 
-					label="PLG_MAPSTATE_LABEL" 
-					description="PLG_MAPSTATE_DESC" 
+				<field
+					name="mapState"
+					type="text"
+					default=""
+					label="PLG_MAPSTATE_LABEL"
+					description="PLG_MAPSTATE_DESC"
 					size="10" />
-				<field 
-					name="mapCountry" 
-					type="text" 
-					default="" 
-					label="PLG_MAPCOUNTRY_LABEL" 
-					description="PLG_MAPCOUNRTY_DESC" 
+				<field
+					name="mapCountry"
+					type="text"
+					default=""
+					label="PLG_MAPCOUNTRY_LABEL"
+					description="PLG_MAPCOUNRTY_DESC"
 				size="10" />
 			</fieldset>
 
 		</fields>
 	</config>
+
+	<!-- UPDATESERVER DEFINITION -->
+	<updateservers>
+	        <!-- Note: No spaces or linebreaks allowed between the server tags -->
+	        <server type="extension" priority="1" name="Loadmap Update Site">http://www.noxidsoft.com/otherApps/jupdates/loadmap-update.xml</server>
+	</updateservers>
 </extension>
